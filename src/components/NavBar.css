@@ -1,0 +1,13 @@
+.NavBar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(82, 68, 68, 0.1); 
+  backdrop-filter: blur(20px);
+  padding:0 2rem;
+  border-radius: 15px;;
+}
+
+.NavBar-nav a{
+  padding:0.4rem;
+}

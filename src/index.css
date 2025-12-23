@@ -1,68 +1,194 @@
+/* ======================================================
+   Author: Joachim MASSON
+   For: Joachim's portefolio
+   Description: Index stylesheet for general graphic chart, with root variable and general reset
+   ====================================================== */
+
+/* ===== FONT IMPORT ROOT VARIABLES ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+	/* COLORS */
+  /*Light theme*/
+    --bg-main: #F2F2F2;
+    --bg-secondary: #F1F5F9;
+    --text-main: #0F172A;
+    --text-secondary: #475569;
+    --accent: #0284C7;
+    --accent-hover: #0369a1;
+    --border-color: #E2E8F0;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+/* TYPOGRAPHY */
+		/* FONT */
+    --font-titles: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+		/* FONT-SIZE */
+	--fs-300: clamp(0.5rem, 0.7rem + 0.3vw, 1rem); /* ~14–16px */
+	--fs-400: clamp(1rem, 0.9rem + 0.4vw, 1.125rem); /* ~16–18px */
+	--fs-600: clamp(1.25rem, 1rem + 1vw, 1.75rem); /* ~20–28px */
+
+	--font-p: clamp(0.5rem, 0.7rem + 0.3vw, 1rem); /* ~14–16px */
+  --font-h: clamp(1rem, -0.25rem + 4vw, 2rem); /* ~1-2rem */
+  --font-sub: clamp(1rem, 0.9rem + 0.4vw, 1.125rem); /* ~3-4 rem */
+  --font-title: clamp(3rem, 0.5rem + 8vw, 4rem); /* ~3-5rem */
+
+	--font-size-base: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-lg: 1.25rem;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+	--font-size-h4: 1.2rem;
+	--font-size-h5: 1rem;
+	--font-size-h6: 0.875rem;
+
+	--font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+	  /* SPACING */
+  --space-0: 0;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* SHADOWS */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.2);
+
 }
 
+[data-theme="dark"] {
+    --bg-main: #0F172A;
+    --bg-secondary: #1E293B;
+    --text-main: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --accent: #38BDF8;
+    --accent-hover: #7dd3fc;
+    --border-color: #334155;
+}
+
+/* ===== RESET LIGHT ===== */
+
+
+
+::before,
+*::after {
+	box-sizing: border-box;
+}
+html,
+body,
+#root {
+	height: 100%;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: var(--bg-main);
+	font-family: var(--font-body);
+	color:var(--text-main);
+	font-weight: var(--font-weight-regular);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition douce lors du changement de mode */
+}
+
+a,
+button {
+	cursor: pointer;
+}
+
+/* LINKS */
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+	color: var(--link);
+	font-weight: 600;
+	text-decoration: none;
 }
 a:hover {
-  color: #535bf2;
+	color: var(--linkv);
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+/* BUTTON */
+button {
+	background-color: var(--accent);
+	border: none;
+	padding: 1rem 2rem;
+	color:var(--text-secondary);
+	margin: 0.5rem 1rem;
+	border-radius: 6px;
+	cursor: pointer;
+	text-align: center;
+	transition: background 0.3s;
+}
+button:hover {
+	background-color: var(--accent-hover);
+	transform: translateY(-2px);
+}
+
+/* TEXT */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  font-family: var(--font-titles);
+  color: var( --text-main);
+  font-weight: var(--font-weight-bold);
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: var(--font-size-h1);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+h2 {
+  font-size: var(--font-size-h2);
+	/* ou font-size: calc(var(--font-h) * 1.5); */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+h3 {
+  font-size: var(--font-size-h3);
+}
+h4 {
+	font-size: var(--font-size-h4);
+}
+h5 {
+	font-size: var(--font-size-h5);
+}
+h6 {
+	font-size: var(--font-size-h6);
+}
+p {
+  color: var(--text-secondary);
+}
+
+/* IMG */
+img {
+	height: auto;
+}
+
+/* LIST */
+ul,
+ol {
+  list-style: none;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        /* On applique les variables du mode sombre par défaut */
+        --bg-main: #0F172A;
+        --bg-secondary: #1E293B;
+        --text-main: #F8FAFC;
+        --text-secondary: #94A3B8;
+        --accent: #38BDF8;
+        --border-color: #334155;
+    }
 }
