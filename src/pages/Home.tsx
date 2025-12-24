@@ -1,4 +1,6 @@
+import Hero from "../components/Hero"
+
 function Home () {
-  return
+  return <Hero />
 }
 export default Home;

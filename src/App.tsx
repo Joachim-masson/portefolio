@@ -1,3 +1,4 @@
+import Home from "./pages/Home"
 import NavBar from "./components/NavBar"
 
 import './App.css'
@@ -9,6 +10,7 @@ function App() {
     <>
       <h1>Mon Portefolio</h1>
       <NavBar />
+      <Home/>
       
     </>
   )
