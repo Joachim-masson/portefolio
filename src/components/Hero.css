@@ -1,3 +1,33 @@
+.Hero-section {
+  position: relative; 
+  width: 100%;
+  line-height: 0;
+}
+
 .Hero-imageHero {
   width : 100%;
+  height: auto;
+  display: block;
+}
+
+.Hero-link {
+  background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour la lisibilité */
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.Hero-link:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.Hero-link-container {
+  position: absolute;
+  bottom: 10%;       
+  left: 15%;         
+  display: flex;
+  gap: 20%;
 }
