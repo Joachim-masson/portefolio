@@ -1,4 +1,6 @@
 .IdentityCard-article{
   background-color:var(--bg-secondary);
   padding:0 2rem 1rem;
+  border-radius: 5px;
+  margin: 2rem 6rem;
 }

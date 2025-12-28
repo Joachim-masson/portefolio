@@ -1,3 +1,4 @@
+import HardSkills from "../components/HardSkills"
 import Hero from "../components/Hero"
 import IdentityCard from "../components/IdentityCard"
 import SoftSkills from "../components/SoftSkills"
@@ -12,6 +13,7 @@ function Home () {
         <IdentityCard />
         <SoftSkills />
       </div>
+      <HardSkills />
     </>
   )
 }
