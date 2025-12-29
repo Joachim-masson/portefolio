@@ -3,4 +3,23 @@
   padding:0 2rem 1rem;
   border-radius: 5px;
   margin: 2rem 6rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.IdentityCard-article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.IdentityCard-h3{
+  padding-top:1rem;
+}
+
+.IdentityCard-highlight{
+  color: var(--text-main);
+  font-weight : var(--font-weight-bold);
+}
+
+.IdentityCard-highlight:hover{
+  color: var(--accent-hover);
 }

@@ -17,12 +17,18 @@
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
 }
 
 .Hero-link:hover {
   background-color: var(--accent-hover);
   color:var(--bg-main);
+  transform: translateY(-5px) translateX(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  
+
 }
 
 .Hero-link-container {

@@ -10,4 +10,19 @@
   background-color: var(--bg-secondary);
   padding: 0 2rem 1rem;
   border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.SoftSkills-article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  
+  
+}
+
+.SoftSkills-article:hover p{
+  color: var(--text-main); 
+  transition: color 0.3s ease;
+  font-weight: var(--font-weight-bold);
+}
+

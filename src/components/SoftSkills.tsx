@@ -3,7 +3,7 @@ import "./SoftSkills.css"
 function SoftSkills () {
   return (
     <section>
-      <h2> SoftSkills</h2>
+      <h2 id="softskills"> SoftSkills</h2>
       <div className="SoftSkills-article-container">
         <article className="SoftSkills-article">
           <h3>Organisation & Structure</h3>
