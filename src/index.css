@@ -12,7 +12,7 @@
 	/* COLORS */
   /*Light theme*/
     --bg-main: #F2F2F2;
-    --bg-secondary: #F1F5F9;
+    --bg-secondary: #d4dee9;
     --text-main: #0F172A;
     --text-secondary: #475569;
     --accent: #0284C7;
@@ -178,6 +178,11 @@ img {
 ul,
 ol {
   list-style: none;
+}
+
+/* remplace l'utilisation d'un hook*/
+html {
+  scroll-behavior: smooth;
 }
 
 
