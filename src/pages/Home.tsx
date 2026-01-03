@@ -1,4 +1,3 @@
-import Formations from "../components/Formations"
 import HardSkills from "../components/HardSkills"
 import Hero from "../components/Hero"
 import IdentityCard from "../components/IdentityCard"
@@ -17,9 +16,7 @@ function Home () {
       </div>
       <HardSkills />
       <Projet />
-      <div>
-        <Formations />
-      </div>
+  
     </>
   )
 }

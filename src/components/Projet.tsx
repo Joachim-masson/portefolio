@@ -1,5 +1,5 @@
 function Projet () {
-  return <h2> Projets</h2>
+  return <h2 id="projets"> Projets</h2>
 }
 
 export default Projet

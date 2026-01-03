@@ -8,8 +8,9 @@ function Hero () {
     <section className="Hero-section">
       <img className="Hero-imageHero"src={imageHero} alt="Illustration du code devenant créativité"/>
       <div className="Hero-link-container" >
-        <a href="" className="Hero-link">Projets</a>
+        <a href="#projets" className="Hero-link">Projets</a>
         <a href="" className="Hero-link">CV</a>
+        <a href="" className="Hero-link">Contact</a>
       </div>
     </section>)
 }

@@ -15,5 +15,23 @@
 }
 
 .NavBar-nav a{
-  padding:0.4rem;
+  padding:1rem;
+}
+
+.NavBar-external-link img{
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.NavBar-external-link {
+  display:flex;
+  padding: 0.4rem;
+} 
+
+.NavBar-external-link a{
+  padding: 0 0.6rem;
+}
+
+.NavBar-logo{
+  width: 3rem;
 }
