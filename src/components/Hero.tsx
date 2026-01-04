@@ -10,7 +10,7 @@ function Hero () {
       <div className="Hero-link-container" >
         <a href="#projets" className="Hero-link">Projets</a>
         <a href="" className="Hero-link">CV</a>
-        <a href="" className="Hero-link">Contact</a>
+        <a href="#contact" className="Hero-link">Contact</a>
       </div>
     </section>)
 }

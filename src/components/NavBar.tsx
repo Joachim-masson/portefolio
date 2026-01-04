@@ -17,12 +17,13 @@ function NavBar () {
         <a href="#projets">Projets</a>
         <a href="#maisaussi">Mais aussi...</a>
       </nav>
-      <ThemeToggle />
+      
       <nav className="NavBar-external-link"aria-label="Liens externes">
         <a href="https://github.com/Joachim-masson" target="_blank"><img src={githubIcon} alt="GitHub" className="nav-icon" /></a>
         <a href="https://www.linkedin.com/in/joachim-masson-dev" target="_blank"><img src={linkedinIcon} alt="LinkedIn" className="nav-icon" /></a>
-        <a href="" ><img src={gmailIcon} alt="boîte mail" className="nav-icon" /></a>
+        <a href="mailto:joachim.masson.17@gmail.com"><img src={gmailIcon} alt="boîte mail" className="nav-icon" /></a>
       </nav>
+      <ThemeToggle />
     </header>
   )
 }
