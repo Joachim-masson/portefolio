@@ -76,7 +76,7 @@ function HardSkills () {
       <div className="hardskills-container">
       {categories.map(cat => (
         <article key={cat} className="hardskills-category-article">
-          <h2 className="hardskills-category-title">{cat}</h2>
+          <h3 className="hardskills-category-title">{cat}</h3>
           <div className="hardskills-skills-grid">
             {hardSkillsData.filter(s => s.categorie === cat).map(skill => (
               <div key={skill.nom} className="hardskills-skill-card">

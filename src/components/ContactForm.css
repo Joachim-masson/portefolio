@@ -28,7 +28,7 @@
 
 .ContactForm-form button {
   padding: 1rem;
-  background-color: var(--accent-hover);
+  background: linear-gradient(90deg, #0284C7 0%,#0369a1 100%);
   color: white;
   border: none;
   border-radius: 8px;
