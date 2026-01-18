@@ -63,10 +63,10 @@ const projets: ProjetType[] = [{
   stack: "React - JS - CSS" ,
   github: "https://github.com/Joachim-masson/portefolio",
   site:"",
-  commentProjet:"",
-  commentContrainte:"",
-  commentLearn: "",
-  video:"",
+  commentProjet:"Conception et développement de mon portfolio professionnel. Il s'agit d'une plateforme personnelle servant de vitrine pour mes projets, mes compétences techniques et mon parcours de développeur.",
+  commentContrainte:"Déploiement continu, design responsive (adapté à tous les supports) et gestion de l'hébergement.",
+  commentLearn: "Structuration d'une application de manière évolutive, mise en valeur de mon identité visuelle, rédaction de documentation technique et déploiement via une plateforme de cloud (Vercel/Netlify).",
+  video:"../assets/Projets/PortFolio.mp4",
 }]
 
 function Projet () {
