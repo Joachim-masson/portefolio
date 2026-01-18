@@ -15,7 +15,7 @@ function NavBar () {
         <a href="#softskills">SoftSkills</a>
         <a href="#hardskills">HardSkills</a>
         <a href="#projets">Projets</a>
-        <a href="#maisaussi">Mais aussi...</a>
+        {/* <a href="#maisaussi">Mais aussi...</a> */}
       </nav>
       
       <nav className="NavBar-external-link"aria-label="Liens externes">
