@@ -1,4 +1,5 @@
-import Formations from "../components/Formations"
+import ContactForm from "../components/ContactForm"
+import Footer from "../components/Footer"
 import HardSkills from "../components/HardSkills"
 import Hero from "../components/Hero"
 import IdentityCard from "../components/IdentityCard"
@@ -17,9 +18,8 @@ function Home () {
       </div>
       <HardSkills />
       <Projet />
-      <div>
-        <Formations />
-      </div>
+      <ContactForm />
+      <Footer />
     </>
   )
 }

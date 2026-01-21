@@ -1,0 +1,41 @@
+.ContactForm-section {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: var(--bg-secondary); /* Adapte à tes variables */
+  border-radius: 15px;
+}
+
+.ContactForm-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ContactForm-form input, .ContactForm-form textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: transparent;
+  color: inherit;
+}
+
+.ContactForm-form button {
+  padding: 1rem;
+  background: linear-gradient(90deg, #0284C7 0%,#0369a1 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.ContactForm-form button:hover {
+  transform: scale(1.02);
+}

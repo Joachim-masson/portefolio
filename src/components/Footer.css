@@ -1,0 +1,11 @@
+.Footer {
+  display:flex;
+  justify-content:  space-around;
+  text-align: center;
+  background-color: var(--text-main);
+  padding: 2rem 0 ;
+}
+
+.Footer-p {
+  color :var(--bg-main);
+}
