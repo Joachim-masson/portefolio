@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>Mon Portefolio</h1>
+      <h1>Mon Portfolio</h1>
       <NavBar />
       <Home/>
       
