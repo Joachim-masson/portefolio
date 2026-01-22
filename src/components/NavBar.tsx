@@ -3,7 +3,7 @@ import ThemeToggle from "./ToggleTheme"
 import githubIcon from '../assets/HardSkills/github-2.svg';
 import linkedinIcon from '../assets/linkedin.svg';
 import gmailIcon from '../assets/g-mail.svg';
-import logo from '../assets/LogoOnglet.svg';
+import logo from '../assets/LogoOnglet.png';
 
 import "./NavBar.css"
 
