@@ -2,7 +2,7 @@
   max-width: 600px;
   margin: 4rem auto;
   padding: 2rem;
-  background: var(--bg-secondary); /* Adapte à tes variables */
+  background: var(--bg-secondary); 
   border-radius: 15px;
 }
 
