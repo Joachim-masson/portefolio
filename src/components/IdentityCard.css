@@ -23,3 +23,15 @@
 .IdentityCard-highlight:hover{
   color: var(--accent-hover);
 }
+
+@media screen and (max-width : 768px){
+  .IdentityCard-article{
+    margin: 1rem 0;
+  }
+  .IdentityCard-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
