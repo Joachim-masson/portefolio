@@ -3,7 +3,7 @@ import "./IdentityCard.css"
 function IdentityCard () {
   return(
     <>
-      <section id="JoachimMasson">
+      <section id="JoachimMasson" className="IdentityCard-section">
         <h2>Joachim Masson</h2>
         <article className="IdentityCard-article">
           <h3 className="IdentityCard-h3">Qui suis-je 🤔</h3>
