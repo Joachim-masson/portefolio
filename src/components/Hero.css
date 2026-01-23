@@ -66,11 +66,19 @@
 
 /* Mobiles (Portrait) */
 @media screen and (max-width: 768px) {
+  .Hero-section {
+    display: flex;
+    flex-direction: column; /* Empile l'image et le container verticalement */
+  }
   .Hero-link-container {
-    flex-direction: column; /* On empile les boutons verticalement */
-    align-items: center;
-    bottom: 5%;
-    gap: 0.8rem;
+    position: static;      /* Annule le positionnement par-dessus l'image */
+    transform: none;       /* Annule les éventuels décalages */
+    padding: 2rem 1rem;    /* Ajoute de l'espace autour des boutons sous l'image */
+    flex-direction: column; /* Empile les boutons les uns sous les autres */
+    align-items: center;   /* Centre les boutons horizontalement */
+    gap: 1rem;             /* Espace entre chaque bouton */
+    width: 100%;
+    
   }
 
   .Hero-link {
