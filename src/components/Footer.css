@@ -9,3 +9,11 @@
 .Footer-p {
   color :var(--bg-main);
 }
+
+@media screen and (max-width : 769px){
+  .Footer{
+  flex-direction: column-reverse;
+  align-items: center;
+
+ }
+}

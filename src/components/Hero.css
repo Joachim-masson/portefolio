@@ -12,16 +12,22 @@
 
 .Hero-link-container {
   position: absolute;
-  bottom: 10%;       
-  left: 15%;         
+  bottom: 10%;
+  left: 50%; /* On centre par rapport au milieu */
+  transform: translateX(-50%); /* Décalage pour un centrage parfait */
   display: flex;
-  gap: 20%;
+  gap: 4rem; /* Utiliser des rem ou px plutôt que % pour le gap est plus stable */
+  width: 90%; /* Prend presque toute la largeur sur mobile */
+  justify-content: center;
+  flex-wrap: wrap; 
 } 
 
-
-
 .Hero-link {
-  min-width: 300px;
+  flex: 1; 
+  min-width: 150px; 
+  max-width: 250px; 
+  min-height: 50px;
+  font-size: 1.1rem; 
   min-height: 60px;
   display: flex ;
   font-size: 1.5rem;
@@ -47,3 +53,30 @@
   
 }
 
+/* Tablettes et mobiles larges */
+@media screen and (max-width: 1024px) {
+  .Hero-link-container {
+    gap: 1rem;
+  }
+  
+  .Hero-link {
+    min-width: 120px;
+  }
+}
+
+/* Mobiles (Portrait) */
+@media screen and (max-width: 768px) {
+  .Hero-link-container {
+    flex-direction: column; /* On empile les boutons verticalement */
+    align-items: center;
+    bottom: 5%;
+    gap: 0.8rem;
+  }
+
+  .Hero-link {
+    width: 100%; /* Les boutons prennent toute la largeur disponible */
+    max-width: 280px;
+    min-height: 45px;
+    font-size: 0.9rem;
+  }
+}

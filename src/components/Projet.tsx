@@ -52,8 +52,8 @@ const projets: ProjetType[] = [{
   video:"../assets/Projets/MoveUp-Prez.mp4",
 },
 {
-  title: "Portefolio",
-  subTitle: "Mon portefolio",
+  title: "Portfolio",
+  subTitle: "Mon portfolio",
   imagePreview:"../assets/Projets/PorteFolio.PNG" ,
   images: [
     "../assets/Projets/PorteFolio-1.PNG",
