@@ -1,6 +1,6 @@
 .NavBar-header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-between;
   align-items: center;
   background-color: color-mix(in srgb, var(--bg-main), transparent 40%); 
   backdrop-filter: blur(20px);
@@ -36,6 +36,8 @@
 
 .NavBar-logo{
   width: 3rem;
+  margin : 0.5rem 1rem;
+
 }
 
 .NavBar-nav a:hover{
@@ -55,4 +57,11 @@
 
 .NavBar-nav a:hover::after {
   width: 100%; /* La ligne se trace jusqu'à 100% */
+}
+
+@media screen and (max-width : 768px){
+  .NavBar-nav{
+    display:flex;
+    flex-direction: column;
+  }
 }
