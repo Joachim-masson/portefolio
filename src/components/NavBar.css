@@ -1,8 +1,9 @@
+/* --- STYLES GÉNÉRAUX (Desktop) --- */
 .NavBar-header {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
-  background-color: color-mix(in srgb, var(--bg-main), transparent 40%); 
+  background-color: color-mix(in srgb, var(--bg-main), transparent 40%);
   backdrop-filter: blur(20px);
   border-radius: 15px;
   position: fixed;
@@ -11,57 +12,120 @@
   transform: translateX(-50%);
   width: 80%;
   z-index: 1000;
-  margin: 5rem auto;
+  margin: 2rem auto; /* Réduit un peu la marge pour le mobile */
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.NavBar-nav a{
-  padding:1rem;
-  transition : all 0.3s ease;
+.NavBar-logo {
+  width: 3rem;
+  margin: 0.5rem;
+}
+
+.NavBar-nav {
+  display: flex;
+}
+
+.NavBar-nav a {
+  padding: 1rem;
+  transition: all 0.3s ease;
   position: relative;
+  text-decoration: none;
+  color: inherit;
 }
 
-.NavBar-external-link img{
-  width: 3rem;
-  border-radius: 50%;
-}
-
-.NavBar-external-link {
-  display:flex;
-  padding: 0.4rem;
-} 
-
-.NavBar-external-link a{
-  padding: 0 0.6rem;
-}
-
-.NavBar-logo{
-  width: 3rem;
-  margin : 0.5rem 1rem;
-
-}
-
-.NavBar-nav a:hover{
-  color:var(--accent-hover);
+.NavBar-nav a:hover {
+  color: var(--accent-hover);
 }
 
 .NavBar-nav a::after {
   content: '';
   position: absolute;
-  width: 0; /* La ligne commence à 0 */
-  height: 2px; /* Épaisseur de la ligne */
-  bottom: 0;
+  width: 0;
+  height: 2px;
+  bottom: 5px;
   left: 0;
-  background-color: var(--accent-hover); /* Couleur de la ligne */
-  transition: width 0.3s ease-in-out; /* Animation fluide */
+  background-color: var(--accent-hover);
+  transition: width 0.3s ease-in-out;
 }
 
 .NavBar-nav a:hover::after {
-  width: 100%; /* La ligne se trace jusqu'à 100% */
+  width: 100%;
 }
 
-@media screen and (max-width : 768px){
-  .NavBar-nav{
-    display:flex;
+.NavBar-external-link {
+  display: flex;
+  align-items: center;
+}
+
+.NavBar-external-link img {
+  width: 2.5rem;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.NavBar-external-link a {
+  padding: 0 0.5rem;
+}
+
+.NavBar-external-link img:hover {
+  transform: scale(1.1);
+}
+
+/* --- RESPONSIVE (Mobile < 768px) --- */
+
+@media screen and (max-width: 768px) {
+  .NavBar-header {
+    flex-direction: column; /* On empile tout verticalement */
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    height: auto;
+  }
+
+  /* Gestion de la ligne du haut (Logo + Hamburger) */
+  /* On force le logo et le burger à rester sur la même ligne même en colonne */
+  .NavBar-header > a:first-child { order: 1; } /* Logo */
+  .hamburger-react { order: 2; z-index: 1001; } 
+
+  /* Cache les menus par défaut */
+  .NavBar-nav, 
+  .NavBar-external-link, 
+  header > div:last-child { /* Cible le ThemeToggle */
+    display: none; 
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Quand le menu est ouvert (grâce à une classe .open sur le header) */
+  .NavBar-header.open {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .NavBar-header.open .NavBar-nav,
+  .NavBar-header.open .NavBar-external-link,
+  .NavBar-header.open .ThemeToggle-container { /* Ajuste selon le nom de classe de ton Toggle */
+    display: flex;
+  }
+
+  /* Ordre d'affichage demandé */
+  .NavBar-nav {
+    order: 3;
     flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .NavBar-external-link {
+    order: 4;
+    margin: 1rem 0;
+  }
+
+  /* On cible le bouton toggle (dernier enfant du header) */
+  .NavBar-header.open > *:last-child {
+    order: 5;
+    display: flex;
+    justify-content: center;
   }
 }
