@@ -22,27 +22,31 @@ function NavBar () {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   
-  return( 
-    <header className="NavBar-header">
-      <a href="#JoachimMasson"><img src={logo} alt="logo de Joachim Masson" className="NavBar-logo"/></a>
-      {isMobile < 768 ? 
-      <Hamburger toggled={isOpen} toggle={setIsOpen} /> : ""
-      }
-      <nav className="NavBar-nav" aria-label="Navigation principale">
-        <a href="#softskills">SoftSkills</a>
-        <a href="#hardskills">HardSkills</a>
-        <a href="#projets">Projets</a>
-        {/* <a href="#maisaussi">Mais aussi...</a> */}
-      </nav>
+  return (
+  /* On ajoute dynamiquement la classe "open" si isOpen est vrai */
+  <header className={`NavBar-header ${isOpen ? "open" : ""}`}>
+    <a href="#JoachimMasson">
+      <img src={logo} alt="logo de Joachim Masson" className="NavBar-logo" />
+    </a>
     
+    {isMobile < 768 && (
+      <Hamburger toggled={isOpen} toggle={setIsOpen} />
+    )}
 
-      <nav className="NavBar-external-link"aria-label="Liens externes">
-        <a href="https://github.com/Joachim-masson" target="_blank"><img src={githubIcon} alt="GitHub" className="nav-icon" /></a>
-        <a href="https://www.linkedin.com/in/joachim-masson-dev" target="_blank"><img src={linkedinIcon} alt="LinkedIn" className="nav-icon" /></a>
-        <a href="mailto:joachim.masson.17@gmail.com"><img src={gmailIcon} alt="boîte mail" className="nav-icon" /></a>
-      </nav>
-      <ThemeToggle />
-    </header>
-  )
+    <nav className="NavBar-nav" aria-label="Navigation principale">
+      <a href="#softskills" onClick={() => setIsOpen(false)}>SoftSkills</a>
+      <a href="#hardskills" onClick={() => setIsOpen(false)}>HardSkills</a>
+      <a href="#projets" onClick={() => setIsOpen(false)}>Projets</a>
+    </nav>
+
+    <nav className="NavBar-external-link" aria-label="Liens externes">
+      <a href="https://github.com/Joachim-masson" target="_blank"><img src={githubIcon} alt="GitHub" className="nav-icon" /></a>
+      <a href="https://www.linkedin.com/in/joachim-masson-dev" target="_blank"><img src={linkedinIcon} alt="LinkedIn" className="nav-icon" /></a>
+      <a href="mailto:joachim.masson.17@gmail.com"><img src={gmailIcon} alt="boîte mail" className="nav-icon" /></a>
+    </nav>
+
+    <ThemeToggle />
+  </header>
+);
 }
 export default NavBar;
