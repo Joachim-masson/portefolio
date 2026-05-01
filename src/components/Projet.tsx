@@ -28,7 +28,7 @@ const projets: ProjetType[] = [{
   stack: "React - JS - CSS" ,
   github: "https://github.com/Joachim-masson/Tatooine_Interim",
   site:"Soon",
-  commentProjet:"Site web créé en 24h lors d'un Hackathon dans le cadre de ma formation DWWM. Un projet pour le fun, pour consulter les profils de différents presonnages de l'univers Star Wars.",
+  commentProjet:"Site web créé en 24h lors d'un Hackathon dans le cadre de ma formation DWWM. Un projet pour le fun, pour consulter les profils de différents personnages de l'univers Star Wars.",
   commentContrainte:"Limite de temps de 24 heures, travail en équipe, utilisation d'une API.",
   commentLearn: "travail en équipe sur un projet court, utilisation de git, la répartition des tâches et des priorités et l'appel à une API existante.",
   video:"../assets/Projets/Tatooine-Interim-Prez.mp4",
