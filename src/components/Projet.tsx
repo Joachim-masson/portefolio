@@ -28,7 +28,7 @@ const projets: ProjetType[] = [{
   stack: "React - JS - CSS" ,
   github: "https://github.com/Joachim-masson/Tatooine_Interim",
   site:"Soon",
-  commentProjet:"Site web créé en 24h lors d'un Hackathon dans le cadre de ma formation DWWM. Un projet pour le fun, pour consulter les profils de différents presonnages de l'univers Star Wars.",
+  commentProjet:"Site web créé en 24h lors d'un Hackathon dans le cadre de ma formation DWWM. Un projet pour le fun, pour consulter les profils de différents personnages de l'univers Star Wars.",
   commentContrainte:"Limite de temps de 24 heures, travail en équipe, utilisation d'une API.",
   commentLearn: "travail en équipe sur un projet court, utilisation de git, la répartition des tâches et des priorités et l'appel à une API existante.",
   video:"../assets/Projets/Tatooine-Interim-Prez.mp4",
@@ -37,7 +37,7 @@ const projets: ProjetType[] = [{
   title: "Move Up",
   subTitle: "Projet 2 - Formation DWWM",
   imagePreview:"../assets/Projets/MoveUp-1.PNG" ,
-   images: [
+  images: [
     "../assets/Projets/MoveUp-2.PNG",
     "../assets/Projets/MoveUp-3.PNG", 
     "../assets/Projets/MoveUp-4.PNG",
@@ -50,6 +50,23 @@ const projets: ProjetType[] = [{
   commentContrainte:"Travail en équipe, utilisation d'une API, méthodologie agile via l'outil JIRA.",
   commentLearn: "Utilisation du context pour masquer/afficher des informations (favoris) en fonction de l'état d'identification du client, utilisation d'une API.",
   video:"../assets/Projets/MoveUp-Prez.mp4",
+},
+{
+  title: "The Simpsons",
+  subTitle: "Projet 4 - Formation DWWM",
+  imagePreview:"../assets/Projets/Simpsons-1.PNG" ,
+  images: [
+    "../assets/Projets/Simpsons-2.PNG",
+    "../assets/Projets/Simpsons-3.PNG", 
+    "../assets/Projets/Simpsons-4.PNG",
+  ],
+  stack: "React - JS - CSS - ExpressJS - Node.js - MySQL" ,
+  github: "https://github.com/Joachim-masson/Projet4-Front",
+  site:"Soon",
+  commentProjet:"Création d'un site internet répertoriant les personnages et les lieux de la série animée the simpsons avec gestion sécurisée du contenu.",
+  commentContrainte:"Travail solo, CRUD complet, DB, 5 jours maximum.",
+  commentLearn: "Création d'une app minimaliste mais compléte du début à la fin, avec les phases de conception, développement et test. Création d'un back-end en Structure MVC",
+  video:"../assets/Projets/Simpsons-Prez.mp4",
 },
 {
   title: "Portfolio",

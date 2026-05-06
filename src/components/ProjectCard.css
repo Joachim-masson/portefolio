@@ -8,6 +8,7 @@
   flex-direction: column;
   padding-bottom: 20px;
   max-width: 350px;
+  margin: 0 auto;
 }
 
 .ProjectCard:hover {
