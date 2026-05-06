@@ -65,7 +65,7 @@ const projets: ProjetType[] = [{
   site:"Soon",
   commentProjet:"Création d'un site internet répertoriant les personnages et les lieux de la série animée the simpsons avec gestion sécurisée du contenu.",
   commentContrainte:"Travail solo, CRUD complet, DB, 5 jours maximum.",
-  commentLearn: "Création d'une app minimaliste mais compléte du début à la fin, avec les phases de conception, développement et test.",
+  commentLearn: "Création d'une app minimaliste mais compléte du début à la fin, avec les phases de conception, développement et test. Création d'un back-end en Structure MVC",
   video:"../assets/Projets/Simpsons-Prez.mp4",
 },
 {
