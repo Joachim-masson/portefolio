@@ -1,17 +1,15 @@
-import Home from "./pages/Home"
-import NavBar from "./components/NavBar"
-
+import { Outlet } from "react-router-dom"
 import './App.css'
+import Footer from "./components/Footer"
 
 function App() {
  
-
   return (
     <>
-      <h1>Mon Portfolio</h1>
-      <NavBar />
-      <Home/>
-      
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
     </>
   )
 }
