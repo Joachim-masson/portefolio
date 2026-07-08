@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+# 💻 Portfolio de Joachim Masson — Développeur Full-Stack Junior
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="https://joachim-masson.vercel.app/"><strong>Voir le Portfolio en ligne ✨</strong></a>
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-En%20Ligne-success?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/Licence-MIT-green?style=for-the-badge" alt="Licence">
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 👤 À propos de moi
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Anciennement en reconversion professionnelle, je suis aujourd'hui **Développeur Full-Stack Junior**. Passionné par la programmation sous toutes ses formes, j'ai une affection toute particulière pour les **langages de bas niveau** (comme l'**Assembleur** et le **COBOL**), tout en maîtrisant les technologies modernes du web pour concevoir des applications performantes et robustes.
 
-## Expanding the ESLint configuration
+*   🔭 **Objectif :** Continuer à apprendre, relever des défis techniques et mettre mes compétences au service de projets stimulants.
+*   🧠 **Polyvalence :** Curieux de nature, j'aime explorer l'écosystème logiciel du bas niveau jusqu'au front-end moderne.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Technologies & Outils
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Mon Portfolio
+![React](https://img.shields.io/badge/React-19.2.0-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-7.3.2-646CFF?style=flat-square&logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-Déploiement-000000?style=flat-square&logo=vercel&logoColor=white)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Mes autres compétences & langages de cœur
+*   **Bas niveau :** Assembleur, COBOL 🏛️
+*   **Back-end & Scripting :** Node.js, Python, Java 🐍☕
+*   **Front-end :** React, TypeScript, HTML5 / CSS3 🎨
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🌟 Fonctionnalités du Portfolio
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Ce repo contient le code source de mon portfolio (100% Front-end), conçu pour être à la fois épuré, interactif et complet :
+
+*   🌓 **Mode Clair / Mode Sombre :** Une interface adaptative pour un confort de lecture optimal.
+*   📱 **Design 100% Responsive :** Parfaitement optimisé pour mobile, tablette et ordinateur.
+*   📬 **Formulaire de Contact Opérationnel :** Pour me laisser un message directement depuis le site.
+*   📄 **Téléchargement de CV :** Mon parcours accessible en un clic.
+*   🎥 **Présentations immersives :** Accès à des détails poussés ainsi qu'à une **vidéo de présentation** pour chacun des projets exposés.
+*   🔗 **Liens Sociaux :** Redirection vers mon LinkedIn et mon GitHub.
+
+---
+
+## 📂 Projets mis en valeur
+
+Le portfolio présente **4 projets majeurs**, parmi lesquels :
+
+### 1. 🍩 The Simpsons
+*   **Description :** Création d'un site internet complet répertoriant les personnages et les lieux de la célèbre série animée *The Simpsons*.
+*   **Spécificité :** Intègre une gestion sécurisée du contenu pour administrer les données de la série de manière fiable.
+
+### 2. 🏋️ Move Up
+*   **Description :** Application de fitness complète divisée en deux parties : une section vitrine grand public et un espace client dédié.
+*   **Spécificité :** Système d'identification sécurisé obligatoire pour l'utilisateur afin d'accéder au contenu exclusif réservé aux membres.
+
+### 3. 💼 Ce Portfolio même
+*   **Description :** Ma propre vitrine de compétences développée sous React 19 et Vite.
+
+---
+
+## 🚀 Installation et Lancement en Local
+
+Si tu souhaitez cloner ce projet et le faire tourner sur ta machine :
+
+1. **Cloner le dépôt :**
+   ```bash
+   git clone [https://github.com/ton-username/portfolio.git](https://github.com/ton-username/portfolio.git)
+   cd portfolio
