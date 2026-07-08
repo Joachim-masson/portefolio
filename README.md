@@ -72,5 +72,28 @@ Si tu souhaitez cloner ce projet et le faire tourner sur ta machine :
 
 1. **Cloner le dépôt :**
    ```bash
-   git clone [https://github.com/ton-username/portfolio.git](https://github.com/ton-username/portfolio.git)
-   cd portfolio
+   git clone [https://github.com/ton-username/portefolio.git](https://github.com/ton-username/portefolio.git)
+   cd portefolio
+
+2. **Installer les dépendances :**
+   ```bash
+   npm install
+
+3. **Lancer le serveur de développement :**
+   ```bash
+   npm run dev
+
+
+Le site sera accessible par défaut sur http://localhost:5173.
+
+---
+
+## 🤝 Me contacter
+
+N'hésite pas à visiter mon site ou à me joindre directement via mes réseaux :
+
+🌐 Site Web : [joachim-masson.vercel.app](https://joachim-masson.vercel.app/)
+
+💼 LinkedIn : [joachim-masson-dev](www.linkedin.com/in/joachim-masson-dev)
+
+🐙 GitHub : [joachim-masson](https://github.com/Joachim-masson)
