@@ -77,7 +77,7 @@
     flex-direction: column; /* Empile les boutons les uns sous les autres */
     align-items: center;   /* Centre les boutons horizontalement */
     gap: 1rem;             /* Espace entre chaque bouton */
-    width: 100%;
+    width: auto;
     
   }
 

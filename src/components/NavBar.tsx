@@ -25,13 +25,13 @@ function NavBar () {
   return (
   /* On ajoute dynamiquement la classe "open" si isOpen est vrai */
   <header className={`NavBar-header ${isOpen ? "open" : ""}`}>
+    {isMobile < 768 && (
+      <Hamburger toggled={isOpen} toggle={setIsOpen} />
+    )}
     <a href="#JoachimMasson">
       <img src={logo} alt="logo de Joachim Masson" className="NavBar-logo" />
     </a>
     
-    {isMobile < 768 && (
-      <Hamburger toggled={isOpen} toggle={setIsOpen} />
-    )}
 
     <nav className="NavBar-nav" aria-label="Navigation principale">
       <a href="#softskills" onClick={() => setIsOpen(false)}>SoftSkills</a>
@@ -44,8 +44,9 @@ function NavBar () {
       <a href="https://www.linkedin.com/in/joachim-masson-dev" target="_blank"><img src={linkedinIcon} alt="LinkedIn" className="nav-icon" /></a>
       <a href="mailto:joachim.masson.17@gmail.com"><img src={gmailIcon} alt="boîte mail" className="nav-icon" /></a>
     </nav>
-
+    <div className="NavBar-themeToggle">
     <ThemeToggle />
+    </div>
   </header>
 );
 }
